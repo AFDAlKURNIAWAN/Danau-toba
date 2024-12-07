@@ -1,0 +1,189 @@
+@media (max-width: 768px) {
+  .navbar {
+    background-color: black;
+    padding: 10px 30px;
+  }
+
+  .nav-links {
+    border-radius: 0 0 20px 20px;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .navbar.active {
+    background-color: black;
+  }
+
+  .container h1 {
+    font-size: 70px;
+  }
+
+  .container p {
+    margin: 0 10rem;
+    padding-bottom: 10px;
+  }
+
+  .container-picture {
+    padding: 10px 40px;
+  }
+
+  .about {
+    padding-top: 700px;
+  }
+
+  .bujanginam {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .blog-container {
+    padding: 20px 70px;
+  }
+
+  .container-semua {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .contact-lokasi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .foto-contact iframe {
+    height: 100%;
+    width: 100%;
+  }
+
+  .pembungkus {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+  .container h5 {
+    font-size: 25px;
+  }
+
+  .container h1 {
+    font-size: 70px;
+  }
+
+  .container p {
+    margin: 0 30px;
+  }
+
+  .about {
+    padding-top: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .text-about {
+    text-align: center;
+    padding: 0;
+  }
+
+  .bujanginam {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-container {
+    padding: 0;
+  }
+
+  .container-semua {
+    row-gap: 20px;
+  }
+
+  .isi-blog{
+    margin-bottom: 40px;
+    text-align: start;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-danau {
+    padding-left: 0;
+    padding: 40px;
+    padding-top: 20px;
+  }
+
+  .pembungkus {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container p {
+    margin: 0 30px;
+  }
+
+  .isi-blog{
+    margin-bottom: 40px;
+    text-align: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-danau {
+    padding-top: 10px;
+  }
+}
